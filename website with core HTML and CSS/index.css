@@ -13,7 +13,8 @@ header {
 }
 
 nav {
-  background: rgb(49, 40, 40);
+  /* background: rgb(49, 40, 40); */
+  background-color: black;
   color: #fff;
   padding: 8px;
   display: flex;
@@ -70,7 +71,7 @@ nav .style-nav ul li a {
 nav .style-nav ul li a::before {
   position: absolute;
   content: " ";
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid darkred;
   border-radius: 20px;
   margin-top: 1.5rem;
   width: 0%;
@@ -173,20 +174,22 @@ main {
   height: 80vh;
   width: 99%;
   margin: 0 auto;
-  padding: 0px 20px 20px 20px;
+  padding: 20px;
   /* margin: 2rem; */
 }
 .flex-con {
   width: auto;
   background-color: white;
+
   height: 88vh;
   margin: 0 auto;
   align-items: center;
   /* padding: 10px; */
   gap: 20px;
-  border-radius: 30px;
+
   display: flex;
   justify-content: center;
+  padding: 20px;
 
   /* display: grid;
   padding: 3rem;
@@ -300,7 +303,8 @@ main {
 
 @media (width<1000px) {
   main {
-    height: 80vh;
+    /* height: 80vh; */
+    height: auto;
     width: 99%;
     margin: 0 auto;
     padding: 15px;
@@ -308,7 +312,7 @@ main {
   .flex-con {
     width: auto;
     background-color: white;
-    height: 100vh;
+    height: auto;
 
     display: flex;
     flex-direction: column;
@@ -338,7 +342,7 @@ main {
 .product-section {
   padding: 20px;
 
-  /* margin-top: 3rem; */
+  margin-top: 2.8rem;
   /* margin: 2rem; */
 }
 .product-title-div {
@@ -363,7 +367,8 @@ main {
 }
 .product-grid-container {
   width: auto;
-  background-color: white;
+  margin-top: 4rem;
+  background-color: darkslategray;
   display: grid;
   grid-template-rows: repeat(2, 300px);
   grid-auto-rows: 300px;
@@ -377,18 +382,6 @@ main {
   background-size: cover;
   /* display: grid;
   place-items: center; */
-}
-.product1 {
-}
-.product2 {
-}
-.product3 {
-}
-.product4 {
-}
-.product5 {
-}
-.product6 {
 }
 
 @media (width<980px) {
@@ -455,4 +448,20 @@ main {
 .btn-price:hover {
   background-color: black !important;
   transform: scale(1.06);
+}
+
+/* product section pizza start from here */
+.product-title-div {
+  /* display: grid;
+  place-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  height: 14rem;
+  background-color: lightblue;
+  background-image: url(photos/pizza\ pic\ 3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
