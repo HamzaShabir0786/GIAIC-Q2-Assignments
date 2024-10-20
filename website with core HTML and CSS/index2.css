@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  background: rgb(49, 40, 40);
+  color: #fff;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+nav .style-nav {
+  /* background: linear-gradient(45deg, white, skyblue); */
+  background-color: rgb(204, 181, 181);
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.span {
+  display: flex;
+  background: linear-gradient(to bottom, darkred, black);
+  align-items: center;
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  font-weight: 550;
+  font-family: cursive;
+}
+
+nav .style-nav .logo {
+  display: flex;
+}
+nav .style-nav .logo .nav-logo {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  /* transition: all 2s linear; */
+  animation: nav-ani 8s linear infinite;
+}
+
+nav .style-nav .navigates ul {
+  display: flex;
+  gap: 3rem;
+}
+nav .style-nav ul li a {
+  font-size: 1.2rem;
+  color: black;
+  font-family: sans-serif;
+  font-weight: 550;
+  position: relative;
+  text-decoration: none;
+}
+nav .style-nav ul li a::before {
+  position: absolute;
+  content: " ";
+  border-bottom: 3px solid red;
+  border-radius: 20px;
+  margin-top: 1.5rem;
+  width: 0%;
+  transition: all 0.25s linear;
+}
+
+/* state change */
+nav .style-nav ul li a:hover::before {
+  color: white;
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+@keyframes nav-ani {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@media (width<=740px) {
+  nav .style-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .logo {
+    gap: 0.5rem;
+  }
+  nav .style-nav .logo img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+  }
+  .span {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  nav .style-nav ul li a {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  nav .style-nav ul li a::before {
+    margin-top: 1.2rem;
+  }
+}
+@media (width<=360px) {
+  nav .style-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, white, pink);
+    padding: 0.3rem;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .logo {
+    gap: 0.5rem;
+  }
+  nav .style-nav .logo img {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .span {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  nav .style-nav ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  nav .style-nav .navigates ul {
+    gap: 1.6rem;
+  }
+
+  nav .style-nav ul li a::before {
+    position: absolute;
+    content: " ";
+    border-bottom: 3px solid red;
+    border-radius: 20px;
+    margin-top: 1.2rem;
+    width: 0%;
+    transition: all 0.25s linear;
+  }
+}
+/* navbar end here */
+body {
+  background-color: whitesmoke;
+}
+main {
+  /* height: 80vh;
+  width: 90%;
+  margin: 0 auto; */
+}
+.flex1 {
+  background-color: skyblue;
+}
+.flex2 {
+  background-color: darkred;
+}
+.flex-con {
+  width: 90%;
+  background-color: pink;
+  height: 88vh;
+  margin: 0 auto;
+  /* align-items: center;
+  padding: 10px;
+  gap: 20px;
+  border-radius: 30px; */
+  /* display: flex; */
+  /* padding-top: 60px; */
+
+  display: grid;
+  padding: 3rem;
+  grid-template-rows: repeat(2, 500px);
+  grid-template-columns: repeat(2, minmax(600px, 1fr));
+}
+/* .flex1 {
+  height: 80%;
+  width: 50%;
+  background-color: whitesmoke;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  
+}
+
+.flex1 .title-div p {
+  font-weight: 900;
+  color: darkred;
+  font-size: 1.2rem;
+}
+.flex1 .first-para-div p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+.h1-div h1 {
+  font-size: 6rem;
+  text-shadow: 1px 1px 2px darkred;
+}
+.btn-div button {
+  width: 14rem;
+  border-radius: 10px;
+  outline: 3px solid gray;
+  background-color: rgb(56, 49, 49);
+  cursor: pointer;
+  padding: 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+
+  margin-top: 2rem;
+  transition: all 0.25s linear;
+}
+.btn-div button:hover {
+  background-color: black;
+  transform: scale(1.06);
+}
+.flex2 {
+  height: 80%;
+  min-width: 50%;
+  background-color: whitesmoke;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.flex2 .hero-img img {
+  width: 32rem;
+  height: 32rem;
+  border-radius: 20px;
+}
+
+@media (width<1360px) {
+  .flex1 .first-para-div p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+  }
+} */
