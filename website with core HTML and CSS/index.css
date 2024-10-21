@@ -11,6 +11,16 @@ header {
   top: 0px;
   z-index: 999;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, black, darkslategray);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
 
 nav {
   /* background: rgb(49, 40, 40); */
@@ -26,6 +36,7 @@ nav {
 nav .style-nav {
   /* background: linear-gradient(45deg, white, skyblue); */
   background-color: rgb(204, 181, 181);
+  background-color: darkslategray;
   width: 80%;
   display: flex;
   justify-content: space-around;
@@ -62,7 +73,7 @@ nav .style-nav .navigates ul {
 }
 nav .style-nav ul li a {
   font-size: 1.2rem;
-  color: black;
+  color: whitesmoke;
   font-family: sans-serif;
   font-weight: 550;
   position: relative;
@@ -82,7 +93,7 @@ nav .style-nav ul li a::before {
 nav .style-nav ul li a:hover::before {
   color: white;
   width: 100%;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid whitesmoke;
 }
 @keyframes nav-ani {
   from {
@@ -340,7 +351,8 @@ main {
 }
 /* main section end here */
 .product-section {
-  padding: 20px;
+  padding: 28px;
+  z-index: -1;
 
   margin-top: 2.8rem;
   /* margin: 2rem; */
@@ -366,7 +378,7 @@ main {
   text-shadow: 1px 0px 12px red;
 }
 .product-grid-container {
-  width: auto;
+  width: 100%;
   margin-top: 4rem;
   background-color: darkslategray;
   display: grid;
@@ -464,4 +476,50 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+footer {
+  width: auto;
+
+  height: 100%;
+  /* margin: 28px;
+  margin-top: 2.8rem;
+  margin-bottom: 0px; */
+  margin: 2.8rem 28px 0px 28px;
+}
+.section-footer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-rows: repeat(1, 300px);
+  grid-auto-rows: 330px;
+  grid-gap: 10px;
+}
+.common-footer {
+  color: white;
+  background: linear-gradient(to bottom, darkslategray, black);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-inline: 20px;
+  padding-bottom: 1rem;
+}
+.footer1 .icon-div {
+  font-size: 2rem;
+  width: 10rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer1 .icon-div a {
+  display: inline-block;
+  color: white;
+}
+.footer1 .icon-div a:hover {
+  color: wheat;
+}
+.footer2 a {
+  color: white;
+  text-decoration: none;
 }
