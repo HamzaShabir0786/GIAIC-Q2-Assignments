@@ -173,7 +173,7 @@ nav .style-nav ul li a:hover::before {
     border-bottom: 3px solid red;
     border-radius: 20px;
     margin-top: 1.2rem;
-    width: 0%;
+    width: 0;
     transition: all 0.25s linear;
   }
 }
@@ -383,6 +383,7 @@ main {
   background-size: cover;
   background-position: center;
   border-radius: 20px;
+  /* margin-top: 7rem; */
 }
 .product-title-burger {
   background-image: url("photos/burger\ title\ pic.avif") !important;
