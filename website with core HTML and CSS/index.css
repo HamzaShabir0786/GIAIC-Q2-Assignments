@@ -191,7 +191,7 @@ main {
 .flex-con {
   width: auto;
   background-color: white;
-
+  border-radius: 20px;
   height: 88vh;
   margin: 0 auto;
   align-items: center;
