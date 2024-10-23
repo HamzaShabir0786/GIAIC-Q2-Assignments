@@ -50,6 +50,7 @@ nav .style-nav {
   background: linear-gradient(to bottom, darkred, black);
   align-items: center;
   background-clip: text;
+  --webkit-background-clip: text;
   color: transparent;
   font-size: 3rem;
   font-weight: 550;
@@ -293,7 +294,6 @@ main {
     transition: all 0.25s linear;
   }
   .hero-img {
-    background-color: skyblue;
     width: 400px;
     height: 400px;
   }
@@ -486,6 +486,14 @@ main {
 @media (width<1320px) {
   .product-container-div {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .item8 {
+    grid-column: span 2;
+  }
+}
+@media (width<1010px) {
+  .item8 {
+    grid-column: span 1;
   }
 }
 @media (width<800px) {
