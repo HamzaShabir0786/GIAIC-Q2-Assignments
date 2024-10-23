@@ -392,12 +392,12 @@ main {
 }
 .product-title-burger {
   background-image: url("photos/burger\ title\ pic.avif") !important;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .product-title-Pizza {
   background-image: url(photos/pizza\ pic\ 3.jpg) !important;
-  margin-top: 0rem;
+  margin-top: -2rem;
 }
 .product-title-div h2 {
   font-size: 9rem;
@@ -572,6 +572,9 @@ main {
   }
   .items {
     border-radius: 4px;
+  }
+  .product-title-Pizza {
+    margin-top: 1rem;
   }
 }
 @media (width<340px) {
