@@ -171,7 +171,7 @@ nav .style-nav ul li a:hover::before {
   nav .style-nav ul li a::before {
     position: absolute;
     content: " ";
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid darkred;
     border-radius: 20px;
     margin-top: 1.2rem;
     width: 0;

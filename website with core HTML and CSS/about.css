@@ -1,7 +1,7 @@
 nav .style-nav ul li .about-special::before {
   position: absolute;
   content: " ";
-  border-bottom: 83px solid darkred !;
+  border-bottom: 3px solid darkred;
   border-radius: 20px;
   margin-top: 1.5rem;
   width: 100%;
