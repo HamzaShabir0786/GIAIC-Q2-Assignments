@@ -393,7 +393,7 @@ main {
 
 .product-title-Pizza {
   background-image: url(photos/pizza\ pic\ 3.jpg) !important;
-  margin-top: 10rem;
+  margin-top: 0rem;
 }
 .product-title-div h2 {
   font-size: 9rem;
