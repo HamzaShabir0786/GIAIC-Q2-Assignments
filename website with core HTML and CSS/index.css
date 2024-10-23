@@ -453,11 +453,6 @@ main {
     line-height: 25px;
     text-align: center;
   }
-
-  & .price-order:hover {
-    background-color: black;
-    transform: scale(1.1);
-  }
 }
 .buy-div {
   display: flex;
@@ -481,6 +476,10 @@ main {
 }
 .buy-div .price-order strong {
   font-weight: 800;
+}
+.price-order:hover {
+  background-color: black;
+  transform: scale(1.1);
 }
 @media (width<1320px) {
   .product-container-div {
