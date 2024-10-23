@@ -428,12 +428,11 @@ main {
 .img-div {
   background-color: blue;
   height: 50%;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+}
+.img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .product-info-div {
   background-color: white;
