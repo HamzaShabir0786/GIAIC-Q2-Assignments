@@ -50,7 +50,7 @@ nav .style-nav {
   background: linear-gradient(to bottom, darkred, black);
   align-items: center;
   background-clip: text;
-  --webkit-background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   font-size: 3rem;
   font-weight: 550;
