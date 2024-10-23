@@ -444,10 +444,6 @@ main {
   align-items: center;
   justify-content: space-evenly;
   padding: 10px;
-  h2 {
-    color: darkred;
-    font-weight: 900;
-  }
 }
 .buy-div {
   display: flex;
@@ -480,6 +476,10 @@ main {
   font-weight: 550;
   line-height: 25px;
   text-align: center;
+}
+.product-info-div h2 {
+  color: darkred;
+  font-weight: 900;
 }
 @media (width<1320px) {
   .product-container-div {
