@@ -448,11 +448,6 @@ main {
     color: darkred;
     font-weight: 900;
   }
-  p {
-    font-weight: 550;
-    line-height: 25px;
-    text-align: center;
-  }
 }
 .buy-div {
   display: flex;
@@ -480,6 +475,11 @@ main {
 .price-order:hover {
   background-color: black;
   transform: scale(1.1);
+}
+.product-info-div p {
+  font-weight: 550;
+  line-height: 25px;
+  text-align: center;
 }
 @media (width<1320px) {
   .product-container-div {
