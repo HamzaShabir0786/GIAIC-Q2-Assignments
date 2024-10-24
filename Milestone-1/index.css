@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+.container {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 0px;
+  background-color: darkslategray;
+  padding: 40px;
+}
+header {
+  background: linear-gradient(to bottom, white, darkslategray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+header .img-div {
+  width: 10rem;
+  height: 10rem;
+}
+header .img-div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 5px groove darkred;
+}
+.title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+.title-div .name {
+  font-size: 1.2rem;
+}
+.title-div .student {
+  font-size: 1.1rem;
+}
+main {
+  margin-top: 10px;
+}
+.grid-con {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  grid-template-rows: repeat(2, auto);
+  grid-auto-rows: auto;
+  gap: 10px;
+}
+.grid-items {
+  background-color: gray;
+  padding: 10px;
+}
+.grid-items:nth-last-child(even) {
+  background-color: darkgray;
+}
+.title {
+  width: 80%;
+  background-color: darkslategray;
+  padding: 0.5rem;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.title p strong {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+}
+.real {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+
+  margin-top: 0.5rem;
+  letter-spacing: 2px;
+  line-height: 10px;
+  gap: 5px;
+}
+
+.want-2-block {
+  display: flex;
+  background-color: white;
+  padding: 2px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  justify-content: start;
+  align-items: center;
+  line-height: 1rem;
+}
+.block-1 {
+  width: 10rem;
+  padding: 0.7rem;
+  line-height: 1rem;
+}
+.block-2 {
+  width: 20rem;
+  padding: 0.7rem;
+}
+@media (width<1200px) {
+  .grid-con {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+@media (width<720px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (width<550px) {
+  .container {
+    padding: 5px;
+    width: 100%;
+    margin: 0%;
+  }
+}
+@media (width<440px) {
+  .grid-con {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+}
+@media (width<370px) {
+  .grid-items {
+    padding: 2px;
+  }
+}
