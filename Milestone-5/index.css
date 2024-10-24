@@ -42,7 +42,7 @@ header .img-div img {
   margin-top: 1rem;
   line-height: 1.5rem;
 }
-.title-div .static {
+.title-div .shareable {
   font-size: 1.3rem;
 }
 .title-div .name {
@@ -62,7 +62,7 @@ main {
   gap: 10px;
 }
 .grid-items {
-  background: linear-gradient(to bottom, white, darkslategray);
+  background: linear-gradient(to bottom, white, black);
   padding: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
@@ -106,11 +106,39 @@ main {
   padding: 0.7rem;
   line-height: 1rem;
 }
+
 .block-2 {
-  width: 20rem;
+  width: 17rem;
   padding: 0.7rem;
 }
-@media (width<1290px) {
+input {
+  border: none;
+  outline-color: darkslategray;
+  width: 17rem;
+  border-radius: 20px;
+}
+.main-btn-div {
+  margin-top: 3rem;
+}
+.btn-div {
+  text-align: center;
+
+  border-radius: 20px;
+}
+
+.btn {
+  padding: 1rem;
+  width: 20rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: darkslategray;
+  color: white;
+  cursor: pointer;
+}
+.btn a {
+  color: white;
+}
+@media (width<1270px) {
   .grid-con {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
@@ -126,13 +154,36 @@ main {
     margin: 0%;
   }
 }
+@media (width<500px) {
+}
+
 @media (width<440px) {
   .grid-con {
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+  input {
+    width: auto !important;
   }
 }
 @media (width<370px) {
   .grid-items {
     padding: 2px;
+  }
+  .btn-div {
+    text-align: center;
+    border-radius: 20px;
+  }
+  .btn {
+    padding: 1rem;
+    width: 15rem;
+    font-size: 1.2rem;
+  }
+  .title p strong {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+  }
+  label strong {
+    font-size: 0.8rem;
   }
 }

@@ -1,21 +1,25 @@
-let generate = document.querySelector(".generate") as HTMLButtonElement;
-let reset = document.querySelector(".reset") as HTMLButtonElement;
-let edit = document.querySelector(".edit") as HTMLButtonElement;
-let inputs = document.querySelectorAll("input") as NodeListOf<HTMLInputElement>;
-let items = document.querySelectorAll(
+const generate = document.querySelector(".generate") as HTMLButtonElement;
+const reset = document.querySelector(".reset") as HTMLButtonElement;
+const edit = document.querySelector(".edit") as HTMLButtonElement;
+const dow = document.querySelector(".dow") as HTMLButtonElement;
+const inputs = document.querySelectorAll(
+  "input"
+) as NodeListOf<HTMLInputElement>;
+const items = document.querySelectorAll(
   ".grid-items"
 ) as NodeListOf<HTMLDivElement>;
 
-var body = document.querySelector("body") as HTMLBodyElement;
-var imgdiv = document.querySelector(".img-div") as HTMLDivElement;
-var imgclick = document.querySelector(".img-click") as HTMLImageElement;
+const imgclick = document.querySelector(".img-click") as HTMLImageElement;
+const imgdiv = document.querySelector(".img-div") as HTMLDivElement;
 let inputImage = document.querySelector(".input-image") as HTMLInputElement;
+const body = document.querySelector("body") as HTMLBodyElement;
 
 generate.addEventListener("click", () => {
+  inputImage.style.display = "none";
   items.forEach((item) => {
     item.style.background = "linear-gradient(to bottom, white,darkslategray)";
   });
-  inputImage.style.display = "none";
+
   inputs.forEach((input) => {
     input.setAttribute("readonly", "true");
     input.style.textTransform = "uppercase";
@@ -23,10 +27,11 @@ generate.addEventListener("click", () => {
 });
 
 reset.addEventListener("click", () => {
+  inputImage.style.display = "block";
   items.forEach((item) => {
     item.style.background = "linear-gradient(to bottom, white,black)";
   });
-  inputImage.style.display = "block";
+
   inputs.forEach((input) => {
     input.removeAttribute("readonly");
 
@@ -36,14 +41,18 @@ reset.addEventListener("click", () => {
 });
 
 edit.addEventListener("click", () => {
+  inputImage.style.display = "block";
   items.forEach((item) => {
     item.style.background = "linear-gradient(to bottom, white,black)";
   });
-  inputImage.style.display = "block";
   inputs.forEach((input) => {
     input.removeAttribute("readonly");
     input.style.textTransform = "none";
   });
+});
+
+dow.addEventListener("click", () => {
+  window.print();
 });
 
 inputImage.addEventListener("change", function () {

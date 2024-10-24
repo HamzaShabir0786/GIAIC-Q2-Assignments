@@ -5,11 +5,16 @@ let items = document.querySelectorAll(
   ".grid-items"
 ) as NodeListOf<HTMLDivElement>;
 
+var body = document.querySelector("body") as HTMLBodyElement;
+var imgdiv = document.querySelector(".img-div") as HTMLDivElement;
+var imgclick = document.querySelector(".img-click") as HTMLImageElement;
+let inputImage = document.querySelector(".input-image") as HTMLInputElement;
+
 generate.addEventListener("click", function () {
   items.forEach((item) => {
     item.style.background = "linear-gradient(to bottom, white,darkslategray)";
   });
-
+  inputImage.style.display = "none";
   inputs.forEach((input) => {
     input.setAttribute("readonly", "true");
     input.style.textTransform = "uppercase";
@@ -20,7 +25,7 @@ reset.addEventListener("click", function () {
   items.forEach((item) => {
     item.style.background = "linear-gradient(to bottom, white,black)";
   });
-
+  inputImage.style.display = "block";
   inputs.forEach((input) => {
     input.removeAttribute("readonly");
 
@@ -28,21 +33,10 @@ reset.addEventListener("click", function () {
     input.style.textTransform = "none";
   });
 });
+inputImage.addEventListener("change", function () {
+  if (inputImage.files && inputImage.files[0]) {
+    let imgURL = URL.createObjectURL(inputImage.files[0]);
 
-var imgclick = document.querySelector(".img-click") as HTMLImageElement;
-var imgdiv = document.querySelector(".img-div") as HTMLDivElement;
-var body = document.querySelector("body") as HTMLBodyElement;
-var sts = "on";
-imgclick.addEventListener("click", function () {
-  if (sts == "on") {
-    sts = "off";
-    body.style.backgroundColor = "black";
-    imgdiv.style.transition = "all 20000s linear";
-    imgdiv.style.transform = "rotate(999890deg)";
-  } else {
-    sts = "on";
-    body.style.backgroundColor = "white";
-    imgdiv.style.transition = "all 0s linear";
-    imgdiv.style.transform = "rotate(0deg)";
+    imgclick.src = imgURL;
   }
 });
