@@ -57,10 +57,12 @@ main {
   gap: 10px;
 }
 .grid-items {
-  background: linear-gradient(to bottom, white, darkslategray);
+  background-color: gray;
   padding: 10px;
 }
-
+.grid-items:nth-last-child(even) {
+  background-color: darkgray;
+}
 .title {
   width: 80%;
   background-color: darkslategray;
@@ -130,4 +132,24 @@ main {
   .grid-items {
     padding: 2px;
   }
+  
+}
+footer {
+  margin-top: 3rem;
+}
+.btn-div {
+  text-align: center;
+  /* padding: 1rem; */
+  /* background-color: pink; */
+  border-radius: 20px;
+}
+
+.btn {
+  padding: 1rem;
+  width: 20rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: darkslategray;
+  color: white;
+  cursor: pointer;
 }
