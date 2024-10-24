@@ -31,6 +31,7 @@ header .img-div img {
   width: 100%;
   border-radius: 50%;
   border: 5px groove darkred;
+  cursor: pointer;
 }
 .title-div {
   display: flex;

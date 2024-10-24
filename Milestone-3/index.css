@@ -20,6 +20,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
 header .img-div {
   width: 10rem;
@@ -30,6 +31,7 @@ header .img-div img {
   width: 100%;
   border-radius: 50%;
   border: 5px groove darkred;
+  cursor: pointer;
 }
 .title-div {
   display: flex;
@@ -57,12 +59,11 @@ main {
   gap: 10px;
 }
 .grid-items {
-  background-color: gray;
+  background: linear-gradient(to bottom, white, black);
   padding: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
-.grid-items:nth-last-child(even) {
-  background-color: darkgray;
-}
+
 .title {
   width: 80%;
   background-color: darkslategray;
@@ -102,9 +103,37 @@ main {
   padding: 0.7rem;
   line-height: 1rem;
 }
+
 .block-2 {
-  width: 20rem;
+  width: 17rem;
   padding: 0.7rem;
+}
+input {
+  border: none;
+  outline-color: darkslategray;
+  width: 17rem;
+  border-radius: 20px;
+}
+.main-btn-div {
+  margin-top: 3rem;
+}
+.btn-div {
+  text-align: center;
+
+  border-radius: 20px;
+}
+
+.btn {
+  padding: 1rem;
+  width: 20rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: darkslategray;
+  color: white;
+  cursor: pointer;
+}
+.btn a {
+  color: white;
 }
 @media (width<1200px) {
   .grid-con {
@@ -119,37 +148,39 @@ main {
 @media (width<550px) {
   .container {
     padding: 5px;
-    width: 100%;
     margin: 0%;
   }
 }
+@media (width<500px) {
+}
+
 @media (width<440px) {
   .grid-con {
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+  input {
+    width: auto !important;
   }
 }
 @media (width<370px) {
   .grid-items {
     padding: 2px;
   }
-  
-}
-footer {
-  margin-top: 3rem;
-}
-.btn-div {
-  text-align: center;
-  /* padding: 1rem; */
-  /* background-color: pink; */
-  border-radius: 20px;
-}
-
-.btn {
-  padding: 1rem;
-  width: 20rem;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  background-color: darkslategray;
-  color: white;
-  cursor: pointer;
+  .btn-div {
+    text-align: center;
+    border-radius: 20px;
+  }
+  .btn {
+    padding: 1rem;
+    width: 15rem;
+    font-size: 1.2rem;
+  }
+  .title p strong {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+  }
+  label strong {
+    font-size: 0.8rem;
+  }
 }
