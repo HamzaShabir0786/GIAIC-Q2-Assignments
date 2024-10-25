@@ -40,27 +40,83 @@
 .links-div ul li a {
   color: black;
   font-weight: 400;
+  position: relative;
+}
+.links-div ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 3px solid black;
+  border-radius: 10px;
+  width: 0%;
+  margin-top: 18px;
+
+  transition: all 0.2s linear;
+}
+.links-div ul li a:hover::before {
+  width: 100%;
+  border-bottom-color: rgb(134, 88, 241);
 }
 /* navbar end here */
 .home-main {
-  height: 80vh;
+  height: 90vh;
   width: 100%;
-  background-color: #f5efff;
+  background: linear-gradient(to bottom, white, #9557fa);
+
   margin-top: 2px;
   padding: 0 5rem;
   display: grid;
+
   grid-template-rows: minmax(500px, 600px);
   grid-template-columns: repeat(2, minmax(400px, 1fr));
+  gap: 10px;
   position: relative;
 }
 .grid-1 {
-  background-color: skyblue;
+  /* background-color: rgb(203, 238, 252); */
+  padding-top: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.grid-1 strong {
+  color: rgb(119, 134, 245);
+}
+.grid-1 h1 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: #8a70f3;
+}
+.grid-1 p {
+  line-height: 30px;
+  margin-top: 1rem;
+  font-size: 1.1rem;
 }
 .grid-2 {
-  background-color: lightpink;
+  /* background-color: lightpink; */
+  /* padding-top: 10rem; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-2 .img-div {
+  width: 35rem;
+  height: 35rem;
+  background-color: rebeccapurple;
+  border: 4px solid #cdc1ff;
+  box-shadow: 0px 0px 10px 3px rgb(155, 116, 239);
+  border-radius: 50%;
+}
+.grid-2 .img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-.custom-shape-divider-bottom-1729874692 {
+.custom-shape-divider-bottom-1729883666 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -70,13 +126,13 @@
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1729874692 svg {
+.custom-shape-divider-bottom-1729883666 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 79px;
+  height: 111px;
 }
 
-.custom-shape-divider-bottom-1729874692 .shape-fill {
-  fill: #47819e;
+.custom-shape-divider-bottom-1729883666 .shape-fill {
+  fill: white;
 }
