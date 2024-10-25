@@ -8,8 +8,11 @@ var imgclick = document.querySelector(".img-click");
 var imgdiv = document.querySelector(".img-div");
 var inputImage = document.querySelector(".input-image");
 var body = document.querySelector("body");
+var userNameStrong = document.querySelector(".userNameStrong");
+userNameStrong.setAttribute("contenteditable", "true");
 generate.addEventListener("click", function () {
     inputImage.style.display = "none";
+    userNameStrong.removeAttribute("contenteditable");
     items.forEach(function (item) {
         item.style.background = "linear-gradient(to bottom, white,darkslategray)";
     });
@@ -20,6 +23,12 @@ generate.addEventListener("click", function () {
 });
 reset.addEventListener("click", function () {
     inputImage.style.display = "block";
+    userNameStrong.innerHTML = "Enter your name? "; //add new thing
+    userNameStrong.setAttribute("contenteditable", "true");
+    if (inputImage.files && inputImage.files[0]) {
+        var imgURL = URL.createObjectURL(inputImage.files[0]);
+        imgclick.src = " ";
+    }
     items.forEach(function (item) {
         item.style.background = "linear-gradient(to bottom, white,black)";
     });
@@ -31,6 +40,8 @@ reset.addEventListener("click", function () {
 });
 edit.addEventListener("click", function () {
     inputImage.style.display = "block";
+    userNameStrong.innerHTML = "Enter your name? "; //add new thing
+    userNameStrong.setAttribute("contenteditable", "true");
     items.forEach(function (item) {
         item.style.background = "linear-gradient(to bottom, white,black)";
     });

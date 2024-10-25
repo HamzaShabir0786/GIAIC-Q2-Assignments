@@ -10,12 +10,15 @@ var body = document.querySelector("body") as HTMLBodyElement;
 var imgdiv = document.querySelector(".img-div") as HTMLDivElement;
 var imgclick = document.querySelector(".img-click") as HTMLImageElement;
 let inputImage = document.querySelector(".input-image") as HTMLInputElement;
+let userNameStrong = document.querySelector(".userNameStrong") as HTMLElement;
+userNameStrong.setAttribute("contenteditable", "true");
 
 generate.addEventListener("click", () => {
   items.forEach((item) => {
     item.style.background = "linear-gradient(to bottom, white,darkslategray)";
   });
   inputImage.style.display = "none";
+  userNameStrong.removeAttribute("contenteditable");
   inputs.forEach((input) => {
     input.setAttribute("readonly", "true");
     input.style.textTransform = "uppercase";
@@ -26,6 +29,8 @@ reset.addEventListener("click", () => {
   items.forEach((item) => {
     item.style.background = "linear-gradient(to bottom, white,black)";
   });
+  userNameStrong.innerHTML = "Enter your name? "; //add new thing
+  userNameStrong.setAttribute("contenteditable", "true");
   inputImage.style.display = "block";
   inputs.forEach((input) => {
     input.removeAttribute("readonly");
@@ -39,6 +44,8 @@ edit.addEventListener("click", () => {
   items.forEach((item) => {
     item.style.background = "linear-gradient(to bottom, white,black)";
   });
+  userNameStrong.innerHTML = "Enter your name? "; //add new thing
+  userNameStrong.setAttribute("contenteditable", "true");
   inputImage.style.display = "block";
   inputs.forEach((input) => {
     input.removeAttribute("readonly");

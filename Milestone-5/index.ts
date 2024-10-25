@@ -13,9 +13,12 @@ const imgclick = document.querySelector(".img-click") as HTMLImageElement;
 const imgdiv = document.querySelector(".img-div") as HTMLDivElement;
 let inputImage = document.querySelector(".input-image") as HTMLInputElement;
 const body = document.querySelector("body") as HTMLBodyElement;
+const userNameStrong = document.querySelector(".userNameStrong") as HTMLElement;
+userNameStrong.setAttribute("contenteditable", "true");
 
 generate.addEventListener("click", () => {
   inputImage.style.display = "none";
+  userNameStrong.removeAttribute("contenteditable");
   items.forEach((item) => {
     item.style.background = "linear-gradient(to bottom, white,darkslategray)";
   });
@@ -28,6 +31,13 @@ generate.addEventListener("click", () => {
 
 reset.addEventListener("click", () => {
   inputImage.style.display = "block";
+  userNameStrong.innerHTML = "Enter your name? "; //add new thing
+  userNameStrong.setAttribute("contenteditable", "true");
+  if (inputImage.files && inputImage.files[0]) {
+    let imgURL = URL.createObjectURL(inputImage.files[0]);
+
+    imgclick.src = " ";
+  }
   items.forEach((item) => {
     item.style.background = "linear-gradient(to bottom, white,black)";
   });
@@ -42,6 +52,8 @@ reset.addEventListener("click", () => {
 
 edit.addEventListener("click", () => {
   inputImage.style.display = "block";
+  userNameStrong.innerHTML = "Enter your name? "; //add new thing
+  userNameStrong.setAttribute("contenteditable", "true");
   items.forEach((item) => {
     item.style.background = "linear-gradient(to bottom, white,black)";
   });
