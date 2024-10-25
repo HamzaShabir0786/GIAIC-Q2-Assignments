@@ -32,10 +32,12 @@ reset.addEventListener("click", function () {
     input.value = "";
     input.style.textTransform = "none";
   });
+
   if (inputImage.files && inputImage.files[0]) {
     let imgURL = URL.createObjectURL(inputImage.files[0]);
     imgclick.src = " ";
   }
+
   inputImage.style.display = "block";
   userNameStrong.innerHTML = "Enter your name? "; //add new thing
   userNameStrong.setAttribute("contenteditable", "true");
