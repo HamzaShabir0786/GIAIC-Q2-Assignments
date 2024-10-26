@@ -3,6 +3,11 @@ export default function Home() {
   return (
     <div>
       <Homes />
+      <Homes />
+      <Homes />
+      <Homes />
+      <Homes />
+      <Homes />
     </div>
   );
 }
