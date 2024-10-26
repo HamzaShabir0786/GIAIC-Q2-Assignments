@@ -12,11 +12,7 @@ export default function Homes() {
             iure illum delectus beatae cum placeat repellat corrupti officia
             rerum quaerat?
           </p>
-          <select required>
-            <option value="">Item1</option>
-            <option value="Item2">Item2</option>
-            <option value="Item3">Item3</option>
-          </select>
+          <button>Explore</button>
         </div>
         {/* grid 1 end here */}
         <div className="grid-2">
