@@ -13,10 +13,10 @@ export default function Header() {
                 <Link href="./home">Home</Link>
               </li>
               <li>
-                <Link href="./about">About</Link>
+                <Link href="./services">Services</Link>
               </li>
               <li>
-                <Link href="./services">Services</Link>
+                <Link href="./contact">Contact</Link>
               </li>
             </ul>
           </div>

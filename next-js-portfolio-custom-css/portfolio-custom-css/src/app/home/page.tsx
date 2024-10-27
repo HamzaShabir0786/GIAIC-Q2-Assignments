@@ -1,3 +1,4 @@
+import Services from "../services/page";
 export default function Homes() {
   return (
     <>
@@ -6,11 +7,11 @@ export default function Homes() {
           <strong>This is a portfolio</strong>
           <h1>Welcome to my portfolio</h1>
           <p>
-            My name is Hamza and I am student at GIAIC Lorem, ipsum dolor sit
-            amet consectetur adipisicing elit. Architecto, quia excepturi totam
-            distinctio tempora fugit exercitationem officiis minus temporibus
-            iure illum delectus beatae cum placeat repellat corrupti officia
-            rerum quaerat?
+            My name is Hamza Shabir and I'm a student of Genrative AI at GIAIC
+            Karachi.I have multiple skills such as Web Development, UI UX
+            Designer, video editor and Graphic Designer.There are my collections
+            HTML, CSS, Tailwind CSS, JavaScript, TypeScript, React Js, and Next
+            JS.
           </p>
           <button>Explore</button>
         </div>
@@ -48,6 +49,7 @@ export default function Homes() {
           </svg>
         </div>
       </main>
+      <Services />
     </>
   );
 }

@@ -7,17 +7,19 @@ export default function Footer() {
           <div className="footer1 common-footer">
             <h3>Mr.Burger</h3>
             <p>
-              <strong>phone No: </strong>03183246070
+              <strong>phone No: </strong>
+              <a href="tel:03183246070">03183246070</a>
             </p>
             <p>
-              <strong>Email: </strong>Hamzii2205@gmail.com
+              <strong>Email: </strong>
+              <a href="mailto:hamzii2205@gmail.com">Hamzii2205@gmail.com</a>
             </p>
             <p>
-              <strong>Address:</strong> City, Karachi ; Area, Scheme 22, Gulzar
-              e Hijri
+              <strong>Address:</strong> City: Karachi, Area: Scheme 33, Gulzar e
+              Hijri
             </p>
             <p>
-              <strong>Follow us</strong>
+              <strong>Follow me</strong>
             </p>
             <div className="icon-div">
               <a href="https://www.facebook.com/M.Hamza2205" target="_blank">
@@ -53,12 +55,27 @@ export default function Footer() {
           <div className="footer3 common-footer">
             <h3>Install App</h3>
             <p>Install from App store or Google Play</p>
-            <div className="sore-div">
-              {/* <Image src=" " alt="App store" />
-              <Image src="" alt="play store" /> */}
+            <div className="store-div">
+              <Image
+                src="/image/app store.jpg"
+                width={170}
+                height={48}
+                alt="App store"
+              />
+              <Image
+                src="/image/play store.jpg"
+                alt="play store"
+                width={170}
+                height={48}
+              />
             </div>
             <p>Secured payment Gateways</p>
-            {/* <Image src="" alt="" /> */}
+            <Image
+              src="/image/payment method.png"
+              width={240}
+              height={32}
+              alt="payment gateways"
+            />
           </div>
         </div>
       </footer>
