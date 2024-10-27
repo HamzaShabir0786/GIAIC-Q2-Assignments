@@ -1,4 +1,5 @@
 import Services from "../services/page";
+import Image from "next/image";
 export default function Homes() {
   return (
     <>
@@ -18,10 +19,12 @@ export default function Homes() {
         {/* grid 1 end here */}
         <div className="grid-2">
           <div className="img-div">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0Pru-yLtUX_r9KH629tSwx3I7qVcQ_Lfxw&s"
-              alt=""
-            />
+            <Image
+              src="/image/yahya sinvar.jpg"
+              alt="home hero pic"
+              width={100}
+              height={100}
+            ></Image>
           </div>
         </div>
         {/* grid 2 end here */}
