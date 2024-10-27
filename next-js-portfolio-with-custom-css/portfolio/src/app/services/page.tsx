@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+
 export default function Services() {
   return (
     <>
@@ -35,8 +36,10 @@ export default function Services() {
 
           <div className="grid-items item-2">
             <div className="skill-div">
-              <img
-                src="https://img.freepik.com/free-photo/close-up-woman-eye-looking-camera-blue-iris-generated-by-artificial-intelligence_188544-240714.jpg"
+              <Image
+                src="/image/ui ux.png"
+                width={60}
+                height={48}
                 alt="it is a skill pic"
               />
             </div>

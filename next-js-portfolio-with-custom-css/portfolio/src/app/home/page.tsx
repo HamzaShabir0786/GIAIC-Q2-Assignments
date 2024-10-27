@@ -1,5 +1,6 @@
 import Services from "../services/page";
 import Image from "next/image";
+import Link from "next/link";
 export default function Homes() {
   return (
     <>
@@ -14,7 +15,11 @@ export default function Homes() {
             HTML, CSS, Tailwind CSS, JavaScript, TypeScript, React Js, and Next
             JS.
           </p>
-          <button>Explore</button>
+          <button>
+            <Link href="/contact" target="_blank">
+              Contact
+            </Link>
+          </button>
         </div>
         {/* grid 1 end here */}
         <div className="grid-2">

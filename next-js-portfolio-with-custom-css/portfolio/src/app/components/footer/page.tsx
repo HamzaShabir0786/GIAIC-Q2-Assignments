@@ -1,13 +1,19 @@
 import Image from "next/image";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { fa0 } from "@fortawesome/free-solid-svg-icons/fa0";
+
 export default function Footer() {
   return (
     <>
       <footer>
         <div className="section-footer">
           <div className="footer1 common-footer">
-            <h3>Mr.Burger</h3>
+            <h3>Contact</h3>
+
             <p>
-              <strong>phone No: </strong>
+              <strong>Phone No: </strong>
               <a href="tel:03183246070">03183246070</a>
             </p>
             <p>
