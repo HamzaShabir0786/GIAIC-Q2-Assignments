@@ -434,7 +434,7 @@ textarea {
     height: auto;
   }
 }
-
+/* end new here */
 @media (width<692px) {
   .footer3 {
     grid-column: span 1;
