@@ -187,7 +187,6 @@
 .info-flex {
   display: flex;
   align-items: center;
-
   border-radius: 2px;
   padding: 2px;
   width: 100%;
@@ -249,7 +248,7 @@ textarea {
   height: auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
-  grid-template-rows: repeat(1, 450px);
+  grid-template-rows: repeat(2, 450px);
   grid-auto-rows: 450px;
   gap: 5px;
   padding: 1rem;
@@ -258,16 +257,12 @@ textarea {
   background: linear-gradient(40deg, #8a70f3, #d6d2e6);
   padding: 1rem;
   border-radius: 20px;
-  /* place-content: center; */
   place-items: center;
-  /* text-align: center; */
 }
 .grid-items .skill-div {
   height: 11rem;
   width: 11rem;
-  /* background-color: yellow; */
   border: 3px solid #5228f9;
-
   border-radius: 50%;
 }
 .grid-items .skill-div img {
@@ -309,6 +304,7 @@ textarea {
   transform: scale(1.1);
   color: black;
 }
+/* services secntion end here */
 .section-footer {
   height: auto;
   width: 100%;
@@ -343,6 +339,7 @@ textarea {
   gap: 3px;
 }
 /* footer section end here */
+
 
 @media (width<1320px) {
   .section-services {
@@ -428,7 +425,7 @@ textarea {
     padding: 0.5rem;
     width: 90%;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     justify-content: start;
   }
 }
