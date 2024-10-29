@@ -158,11 +158,11 @@
   padding: 3rem;
   background-color: #cdc1ff;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
 }
 .contact-div {
   width: 100%;
-  height: 50vh;
+  height: auto;
   padding: 4rem 3rem;
   display: grid;
   grid-template-rows: repeat(2, 50px);
@@ -208,9 +208,17 @@ textarea {
   background-color: transparent;
   border: none;
 }
+/* new add */
+.wrapper-send-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+}
 .send-message-btn {
   padding: 1rem;
   width: 14rem;
+  height: 3.5rem; /*new add*/
   color: #5228f9;
   background: linear-gradient(40deg, #8a70f3, white);
   border: none;
@@ -220,12 +228,10 @@ textarea {
   font-size: 1.2rem;
   transition: all 0.2s linear;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  margin-left: 100%;
-  transform: translate(-50%);
 }
 .send-message-btn:hover {
   background: linear-gradient(40deg, #5228f9, white);
-  /* transform: scale(1.1); */
+  transform: scale(1.1);
   color: black;
 }
 /* contact section end here */
@@ -340,7 +346,6 @@ textarea {
 }
 /* footer section end here */
 
-
 @media (width<1320px) {
   .section-services {
     height: auto;
@@ -415,6 +420,21 @@ textarea {
     height: auto;
   }
 }
+/* new add */
+@media (width<=799px) {
+  .contact-item5 {
+    grid-column: span 2;
+    height: auto;
+  }
+}
+/* new add */
+@media (width<620px) {
+  .contact-item5 {
+    grid-column: span 1;
+    height: auto;
+  }
+}
+
 @media (width<692px) {
   .footer3 {
     grid-column: span 1;

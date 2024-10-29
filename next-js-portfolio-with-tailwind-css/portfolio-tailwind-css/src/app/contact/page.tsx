@@ -77,11 +77,13 @@ export default function Contact() {
                 />
               </div>
             </div>
-            <button type="submit" className="send-message-btn">
-              Send Message
-            </button>
           </div>
         </form>
+        <div className="wrapper-send-btn">
+          <button type="submit" className="send-message-btn">
+            Send Message
+          </button>
+        </div>
       </section>
     </>
   );
