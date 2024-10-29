@@ -138,6 +138,14 @@ input {
 .btn a {
   color: white;
 }
+.btns-container {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 0px;
+  background-color: darkslategray;
+  padding: 40px;
+}
 @media (width<1270px) {
   .grid-con {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -145,6 +153,9 @@ input {
 }
 @media (width<870px) {
   .container {
+    width: 100%;
+  }
+  .btns-container {
     width: 100%;
   }
 }
