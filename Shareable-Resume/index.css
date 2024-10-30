@@ -144,6 +144,7 @@ input {
   margin: 0 auto;
   border-radius: 0px;
   background-color: darkslategray;
+  background: linear-gradient(to top, darkslategray, black);
   padding: 40px;
 }
 @media (width<1270px) {
