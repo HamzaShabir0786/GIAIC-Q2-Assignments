@@ -5,34 +5,40 @@
   font-family: sans-serif;
   text-decoration: none;
 }
+body {
+  background-color: silver;
+}
+
 .container {
-  width: 70%;
+  width: 65%;
   height: auto;
   margin: 0 auto;
   border-radius: 0px;
-  background-color: darkslategray;
-  padding: 40px;
+  background-color: rgb(84, 84, 226);
+  padding: 5px;
 }
 header {
-  background: linear-gradient(to bottom, white, darkslategray);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  background-color: darkblue;
+  border-radius: 10px;
 }
 header .img-div {
   width: 10rem;
   height: 10rem;
 }
+
 header .img-div img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 5px groove darkred;
+  border: 5px solid darkred;
   cursor: pointer;
 }
+
 .title-div {
   display: flex;
   justify-content: center;
@@ -42,6 +48,7 @@ header .img-div img {
   margin-top: 1rem;
   line-height: 1.5rem;
 }
+
 .title-div .shareable {
   font-size: 1.3rem;
 }
@@ -51,8 +58,9 @@ header .img-div img {
 .title-div .student {
   font-size: 1.1rem;
 }
+
 main {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .grid-con {
   display: grid;
@@ -61,16 +69,18 @@ main {
   grid-auto-rows: auto;
   gap: 10px;
 }
-.grid-items {
-  background: linear-gradient(to bottom, white, black);
-  padding: 10px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
-}
 
+.grid-items {
+  padding: 3px; /*change*/
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
 .title {
   width: 80%;
-  background-color: darkslategray;
-  padding: 0.5rem;
+  background-color: darkblue;
+  padding: 5px;
+  border-radius: 10px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -106,16 +116,25 @@ main {
   padding: 0.7rem;
   line-height: 1rem;
 }
-
 .block-2 {
-  width: 17rem;
+  width: 20rem;
   padding: 0.7rem;
 }
+
 input {
   border: none;
-  outline-color: darkslategray;
+
   width: 17rem;
   border-radius: 20px;
+}
+.btns-container {
+  width: 65%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 0px;
+  background-color: darkblue;
+
+  padding: 40px;
 }
 .main-btn-div {
   margin-top: 3rem;
@@ -131,21 +150,12 @@ input {
   width: 20rem;
   font-size: 1.5rem;
   border-radius: 10px;
-  background-color: darkslategray;
+  background-color: rgb(11, 11, 165);
   color: white;
   cursor: pointer;
 }
 .btn a {
   color: white;
-}
-.btns-container {
-  width: 70%;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 0px;
-  background-color: darkslategray;
-  background: linear-gradient(to top, darkslategray, black);
-  padding: 40px;
 }
 @media (width<1270px) {
   .grid-con {

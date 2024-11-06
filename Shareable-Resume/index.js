@@ -13,9 +13,7 @@ userNameStrong.setAttribute("contenteditable", "true");
 generate.addEventListener("click", function () {
   inputImage.style.display = "none";
   userNameStrong.removeAttribute("contenteditable");
-  items.forEach(function (item) {
-    item.style.background = "linear-gradient(to bottom, white,darkslategray)";
-  });
+
   inputs.forEach(function (input) {
     input.setAttribute("readonly", "true");
     input.style.textTransform = "uppercase";
@@ -29,9 +27,7 @@ reset.addEventListener("click", function () {
     var imgURL = URL.createObjectURL(inputImage.files[0]);
     imgclick.src = " ";
   }
-  items.forEach(function (item) {
-    item.style.background = "linear-gradient(to bottom, white,black)";
-  });
+
   inputs.forEach(function (input) {
     input.removeAttribute("readonly");
     input.value = "";
@@ -42,9 +38,7 @@ edit.addEventListener("click", function () {
   inputImage.style.display = "block";
   userNameStrong.innerHTML = "Enter your name? "; //add new thing
   userNameStrong.setAttribute("contenteditable", "true");
-  items.forEach(function (item) {
-    item.style.background = "linear-gradient(to bottom, white,black)";
-  });
+
   inputs.forEach(function (input) {
     input.removeAttribute("readonly");
     input.style.textTransform = "none";
