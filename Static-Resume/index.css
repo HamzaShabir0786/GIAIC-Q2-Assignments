@@ -27,6 +27,7 @@ header {
   padding: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
   background-color: darkblue;
+  border-radius: 10px;
 }
 header .img-div {
   width: 10rem;
@@ -71,12 +72,13 @@ main {
   padding: 3px; /*change*/
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
   background-color: whitesmoke;
+  border-radius: 10px;
 }
-
 .title {
   width: 80%;
   background-color: darkblue;
   padding: 5px;
+  border-radius: 10px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -96,7 +98,6 @@ main {
   line-height: 10px;
   gap: 5px;
 }
-
 .want-2-block {
   display: flex;
   background-color: white;
