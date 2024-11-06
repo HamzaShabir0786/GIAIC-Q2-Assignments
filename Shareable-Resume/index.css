@@ -186,6 +186,10 @@ input {
   input {
     width: auto !important;
   }
+  header .img-div {
+    width: 7rem;
+    height: 7rem;
+  }
 }
 @media (width<370px) {
   .grid-items {
@@ -207,5 +211,14 @@ input {
   }
   label strong {
     font-size: 0.8rem;
+  }
+  .title-div .shareable {
+    font-size: 1rem;
+  }
+  .title-div .name {
+    font-size: 0.8rem;
+  }
+  .title-div .student {
+    font-size: 1rem;
   }
 }

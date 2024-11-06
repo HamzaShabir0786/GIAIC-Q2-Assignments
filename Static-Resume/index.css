@@ -142,4 +142,8 @@ main {
   .grid-items {
     padding: 2px;
   }
+  header .img-div {
+    width: 7rem;
+    height: 7rem;
+  }
 }
