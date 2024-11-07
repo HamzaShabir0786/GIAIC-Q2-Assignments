@@ -5,34 +5,40 @@
   font-family: sans-serif;
   text-decoration: none;
 }
+body {
+  background-color: silver;
+}
 .container {
-  width: 70%;
+  width: 65%;
   height: auto;
   margin: 0 auto;
   border-radius: 0px;
-  background-color: darkslategray;
-  padding: 40px;
+
+  background-color: navy;
+  padding: 5px;
 }
 header {
-  background: linear-gradient(to bottom, white, darkslategray);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  background-color: darkblue;
+  border-radius: 10px;
 }
 header .img-div {
   width: 10rem;
   height: 10rem;
 }
+
 header .img-div img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 5px groove darkred;
+  border: 5px solid darkred;
   cursor: pointer;
 }
+
 .title-div {
   display: flex;
   justify-content: center;
@@ -49,8 +55,9 @@ header .img-div img {
   font-size: 1.1rem;
 }
 main {
-  margin-top: 10px;
+  margin-top: 5px;
 }
+
 .grid-con {
   display: grid;
   grid-template-columns: repeat(2, minmax(400px, 1fr));
@@ -59,15 +66,16 @@ main {
   gap: 10px;
 }
 .grid-items {
-  background: linear-gradient(to bottom, white, black);
   padding: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  background-color: whitesmoke;
 }
 
 .title {
   width: 80%;
-  background-color: darkslategray;
-  padding: 0.5rem;
+  background-color: darkblue;
+  padding: 5px;
+  border-radius: 10px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -103,20 +111,31 @@ main {
   padding: 0.7rem;
   line-height: 1rem;
 }
-
 .block-2 {
-  width: 17rem;
+  width: 20rem;
   padding: 0.7rem;
 }
+
 input {
   border: none;
-  outline-color: darkslategray;
+
   width: 17rem;
   border-radius: 20px;
+}
+
+.btns-container {
+  width: 65%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 0px;
+  background-color: darkblue;
+
+  padding: 40px;
 }
 .main-btn-div {
   margin-top: 3rem;
 }
+
 .btn-div {
   text-align: center;
 
@@ -128,14 +147,14 @@ input {
   width: 20rem;
   font-size: 1.5rem;
   border-radius: 10px;
-  background-color: darkslategray;
+  background-color: navy;
   color: white;
   cursor: pointer;
 }
 .btn a {
   color: white;
 }
-@media (width<1270px) {
+/* @media (width<1270px) {
   .grid-con {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
@@ -182,5 +201,73 @@ input {
   }
   label strong {
     font-size: 0.8rem;
+  }
+} */
+
+/* copy 2 */
+
+@media (width<1270px) {
+  .grid-con {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+@media (width<870px) {
+  .container {
+    width: 100%;
+  }
+  .btns-container {
+    width: 100%;
+  }
+}
+@media (width<550px) {
+  .container {
+    padding: 5px;
+    margin: 0%;
+  }
+}
+@media (width<500px) {
+}
+
+@media (width<440px) {
+  .grid-con {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+  input {
+    width: auto !important;
+  }
+  header .img-div {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+@media (width<370px) {
+  .grid-items {
+    padding: 2px;
+  }
+  .btn-div {
+    text-align: center;
+    border-radius: 20px;
+  }
+  .btn {
+    padding: 1rem;
+    width: 15rem;
+    font-size: 1.2rem;
+  }
+  .title p strong {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+  }
+  label strong {
+    font-size: 0.8rem;
+  }
+  .title-div .shareable {
+    font-size: 1rem;
+  }
+  .title-div .name {
+    font-size: 0.8rem;
+  }
+  .title-div .student {
+    font-size: 1rem;
   }
 }
