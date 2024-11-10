@@ -14,9 +14,6 @@ let userNameStrong = document.querySelector(".userNameStrong") as HTMLElement;
 userNameStrong.setAttribute("contenteditable", "true");
 
 generate.addEventListener("click", () => {
-  items.forEach((item) => {
-    item.style.background = "linear-gradient(to bottom, white,darkslategray)";
-  });
   inputImage.style.display = "none";
   userNameStrong.removeAttribute("contenteditable");
   inputs.forEach((input) => {
@@ -26,10 +23,7 @@ generate.addEventListener("click", () => {
 });
 
 reset.addEventListener("click", () => {
-  items.forEach((item) => {
-    item.style.background = "linear-gradient(to bottom, white,black)";
-  });
-  userNameStrong.innerHTML = "Enter your name? "; //add new thing
+  userNameStrong.innerHTML = "Enter your name "; //add new thing
   userNameStrong.setAttribute("contenteditable", "true");
   inputImage.style.display = "block";
   inputs.forEach((input) => {
@@ -41,10 +35,7 @@ reset.addEventListener("click", () => {
 });
 
 edit.addEventListener("click", () => {
-  items.forEach((item) => {
-    item.style.background = "linear-gradient(to bottom, white,black)";
-  });
-  userNameStrong.innerHTML = "Enter your name? "; //add new thing
+  userNameStrong.innerHTML = "Enter your name "; //add new thing
   userNameStrong.setAttribute("contenteditable", "true");
   inputImage.style.display = "block";
   inputs.forEach((input) => {

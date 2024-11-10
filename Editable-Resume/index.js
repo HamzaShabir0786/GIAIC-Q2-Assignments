@@ -10,9 +10,6 @@ var inputImage = document.querySelector(".input-image");
 var userNameStrong = document.querySelector(".userNameStrong");
 userNameStrong.setAttribute("contenteditable", "true");
 generate.addEventListener("click", function () {
-    items.forEach(function (item) {
-        item.style.background = "linear-gradient(to bottom, white,darkslategray)";
-    });
     inputImage.style.display = "none";
     userNameStrong.removeAttribute("contenteditable");
     inputs.forEach(function (input) {
@@ -21,10 +18,7 @@ generate.addEventListener("click", function () {
     });
 });
 reset.addEventListener("click", function () {
-    items.forEach(function (item) {
-        item.style.background = "linear-gradient(to bottom, white,black)";
-    });
-    userNameStrong.innerHTML = "Enter your name? "; //add new thing
+    userNameStrong.innerHTML = "Enter your name "; //add new thing
     userNameStrong.setAttribute("contenteditable", "true");
     inputImage.style.display = "block";
     inputs.forEach(function (input) {
@@ -34,10 +28,7 @@ reset.addEventListener("click", function () {
     });
 });
 edit.addEventListener("click", function () {
-    items.forEach(function (item) {
-        item.style.background = "linear-gradient(to bottom, white,black)";
-    });
-    userNameStrong.innerHTML = "Enter your name? "; //add new thing
+    userNameStrong.innerHTML = "Enter your name "; //add new thing
     userNameStrong.setAttribute("contenteditable", "true");
     inputImage.style.display = "block";
     inputs.forEach(function (input) {
