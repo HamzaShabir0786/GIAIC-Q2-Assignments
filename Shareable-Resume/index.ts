@@ -19,9 +19,6 @@ userNameStrong.setAttribute("contenteditable", "true");
 generate.addEventListener("click", () => {
   inputImage.style.display = "none";
   userNameStrong.removeAttribute("contenteditable");
-  items.forEach((item) => {
-    item.style.background = "linear-gradient(to bottom, white,darkslategray)";
-  });
 
   inputs.forEach((input) => {
     input.setAttribute("readonly", "true");
@@ -31,16 +28,13 @@ generate.addEventListener("click", () => {
 
 reset.addEventListener("click", () => {
   inputImage.style.display = "block";
-  userNameStrong.innerHTML = "Enter your name? "; //add new thing
+  userNameStrong.innerHTML = "Enter your name "; //add new thing
   userNameStrong.setAttribute("contenteditable", "true");
   if (inputImage.files && inputImage.files[0]) {
     let imgURL = URL.createObjectURL(inputImage.files[0]);
 
     imgclick.src = " ";
   }
-  items.forEach((item) => {
-    item.style.background = "linear-gradient(to bottom, white,black)";
-  });
 
   inputs.forEach((input) => {
     input.removeAttribute("readonly");
@@ -52,11 +46,9 @@ reset.addEventListener("click", () => {
 
 edit.addEventListener("click", () => {
   inputImage.style.display = "block";
-  userNameStrong.innerHTML = "Enter your name? "; //add new thing
+  userNameStrong.innerHTML = "Enter your name "; //add new thing
   userNameStrong.setAttribute("contenteditable", "true");
-  items.forEach((item) => {
-    item.style.background = "linear-gradient(to bottom, white,black)";
-  });
+
   inputs.forEach((input) => {
     input.removeAttribute("readonly");
     input.style.textTransform = "none";

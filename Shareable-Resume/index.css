@@ -14,7 +14,7 @@ body {
   height: auto;
   margin: 0 auto;
   border-radius: 0px;
-  background-color: rgb(84, 84, 226);
+  background-color: navy;
   padding: 5px;
 }
 header {
@@ -151,6 +151,7 @@ input {
   font-size: 1.5rem;
   border-radius: 10px;
   background-color: rgb(11, 11, 165);
+  background-color: navy;
   color: white;
   cursor: pointer;
 }

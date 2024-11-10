@@ -11,45 +11,42 @@ var body = document.querySelector("body");
 var userNameStrong = document.querySelector(".userNameStrong");
 userNameStrong.setAttribute("contenteditable", "true");
 generate.addEventListener("click", function () {
-  inputImage.style.display = "none";
-  userNameStrong.removeAttribute("contenteditable");
-
-  inputs.forEach(function (input) {
-    input.setAttribute("readonly", "true");
-    input.style.textTransform = "uppercase";
-  });
+    inputImage.style.display = "none";
+    userNameStrong.removeAttribute("contenteditable");
+    inputs.forEach(function (input) {
+        input.setAttribute("readonly", "true");
+        input.style.textTransform = "uppercase";
+    });
 });
 reset.addEventListener("click", function () {
-  inputImage.style.display = "block";
-  userNameStrong.innerHTML = "Enter your name? "; //add new thing
-  userNameStrong.setAttribute("contenteditable", "true");
-  if (inputImage.files && inputImage.files[0]) {
-    var imgURL = URL.createObjectURL(inputImage.files[0]);
-    imgclick.src = " ";
-  }
-
-  inputs.forEach(function (input) {
-    input.removeAttribute("readonly");
-    input.value = "";
-    input.style.textTransform = "none";
-  });
+    inputImage.style.display = "block";
+    userNameStrong.innerHTML = "Enter your name "; //add new thing
+    userNameStrong.setAttribute("contenteditable", "true");
+    if (inputImage.files && inputImage.files[0]) {
+        var imgURL = URL.createObjectURL(inputImage.files[0]);
+        imgclick.src = " ";
+    }
+    inputs.forEach(function (input) {
+        input.removeAttribute("readonly");
+        input.value = "";
+        input.style.textTransform = "none";
+    });
 });
 edit.addEventListener("click", function () {
-  inputImage.style.display = "block";
-  userNameStrong.innerHTML = "Enter your name? "; //add new thing
-  userNameStrong.setAttribute("contenteditable", "true");
-
-  inputs.forEach(function (input) {
-    input.removeAttribute("readonly");
-    input.style.textTransform = "none";
-  });
+    inputImage.style.display = "block";
+    userNameStrong.innerHTML = "Enter your name "; //add new thing
+    userNameStrong.setAttribute("contenteditable", "true");
+    inputs.forEach(function (input) {
+        input.removeAttribute("readonly");
+        input.style.textTransform = "none";
+    });
 });
 dow.addEventListener("click", function () {
-  window.print();
+    window.print();
 });
 inputImage.addEventListener("change", function () {
-  if (inputImage.files && inputImage.files[0]) {
-    var imgURL = URL.createObjectURL(inputImage.files[0]);
-    imgclick.src = imgURL;
-  }
+    if (inputImage.files && inputImage.files[0]) {
+        var imgURL = URL.createObjectURL(inputImage.files[0]);
+        imgclick.src = imgURL;
+    }
 });
