@@ -195,10 +195,10 @@ main {
   border-radius: 20px;
   height: 88vh;
   margin: 0 auto;
-  align-items: center;
   gap: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 .flex1 {
@@ -211,8 +211,8 @@ main {
   padding: 20px;
   display: flex;
   flex-direction: column;
-
   align-items: center;
+  justify-content: center;
   background-color: whitesmoke;
 }
 
