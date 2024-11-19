@@ -2,7 +2,7 @@ nav .style-nav ul li .home-special::before {
   position: absolute;
   content: " ";
   border-bottom: 3px solid darkred;
-  border-radius: 20px;
+  border-radius: 20.1px;
   margin-top: 1.5rem;
   width: 100%;
   transition: all 0.25s linear;
