@@ -181,9 +181,11 @@ nav .style-nav ul li a:hover::before {
 /* navbar end here */
 body {
   background-color: darkslategray;
+  max-width: 2000px;
+  margin: auto;
 }
 main {
-  height: 80vh;
+  /* height: 80vh; */
   width: 99%;
   margin: 0 auto;
   padding: 20px;
@@ -195,6 +197,7 @@ main {
   border-radius: 20px;
   height: 88vh;
   margin: 0 auto;
+  /* margin-top: 4rem; */
   gap: 20px;
   display: flex;
   justify-content: center;
